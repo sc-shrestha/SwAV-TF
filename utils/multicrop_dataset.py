@@ -5,7 +5,7 @@ AUTO = tf.data.experimental.AUTOTUNE
 
 # Reference: https://github.com/google-research/simclr/blob/master/data_util.py
 
-@tf.function
+
 def gaussian_blur(image, kernel_size=23, padding='SAME'):
 	sigma = tf.random.uniform((1,))* 1.9 + 0.1
 
